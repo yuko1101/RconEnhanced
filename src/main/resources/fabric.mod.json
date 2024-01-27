@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "rconenhanced",
+  "version": "${version}",
+  "name": "RconEnhanced",
+  "description": "A fabric mod which enhances rcon system for Minecraft servers.",
+  "authors": [
+    "yuko1101"
+  ],
+  "contact": {
+    "website": "https://github.com/yuko1101/RconEnhanced",
+    "repo": "https://github.com/yuko1101/RconEnhanced"
+  },
+  "license": "MIT",
+  "icon": "assets/rconenhanced/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "io.github.yuko1101.rconenhanced.RconEnhanced"
+    ]
+  },
+  "mixins": [
+    "rconenhanced.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
